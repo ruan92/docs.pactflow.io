@@ -2,6 +2,7 @@
   "docs": {
     "Getting Started": [
       "getting-started",
+      "tutorial",
       "stubs",
       "saml",
       "billing"
