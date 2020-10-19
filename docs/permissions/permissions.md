@@ -6,9 +6,17 @@ title: Permissions
 
 Bulk delete pacts (which just removes the pacts and their associated verifications) or an integration (which also removes webhooks).
 
+## contract_data:bulk_delete:team
+
+Bulk delete pacts (which just removes the pacts and their associated verifications) or an integration (which also removes webhooks) where the consumer is assigned to the user's teams.
+
 ## contract_data:manage:*
 
 Create, update, and delete any contract related data. This includes applications, application labels, application versions, tags, pacts, and verification results. It does not allow the user to perform bulk deletions (see [contract_data:bulk_delete:\*](#contract_data-bulk_delete)).
+
+## contract_data:manage:team
+
+Create, update, and delete contract related data for applications that are assigned to the user's teams. Pacts are managed by the consumer's team(s) and verification results are managed by the provider's team(s).
 
 ## contract_data:read:*
 
