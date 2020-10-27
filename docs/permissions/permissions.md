@@ -4,11 +4,13 @@ title: Permissions
 
 ## contract_data:bulk_delete:*
 
-Bulk delete pacts (which just removes the pacts and their associated verifications) or an integration (which also removes webhooks).
+Bulk delete pacts (which just removes the pacts and their associated verifications), applications (which removes associated pacts, verification results, application versions and webhooks) or an integration (which removes all pacts, verification results and webhooks, but will leave any application which is referenced by another integration).
 
 ## contract_data:bulk_delete:team
 
-Bulk delete pacts (which just removes the pacts and their associated verifications) or an integration (which also removes webhooks) where the consumer is assigned to the user's teams.
+Bulk delete pacts (see above) where consumer is assigned to the user's teams.
+
+
 
 ## contract_data:manage:*
 
@@ -24,7 +26,7 @@ View any contract related data. This includes applications, application labels, 
 
 ## read_token:manage:own
 
-Mange own *read only* API token. This permission is for users/system accounts that are not allowed to modify any resources (eg. those with the [Viewer](./predefined-roles#viewer) role), for whom it does not make sense to have a read/write token.
+Mange own *read only* API token. This permission is for users/system accounts that are not allowed to modify any resources (eg. those with the [Viewer](./system-defined-roles#viewer) role), for whom it does not make sense to have a read/write token.
 
 ## role:manage:*
 
