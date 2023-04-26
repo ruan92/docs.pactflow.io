@@ -250,20 +250,6 @@ export const tableData = [
     ]
   },
   {
-    linkTitle: '.NET API Provider tested with Pact Verifier',
-    linkUrl: '/docs/examples/dotnet/python',
-    badges: [],
-    language: '.NET',
-    useCase: 'API',
-    side: 'Provider',
-    compatible_clients: [
-      {
-        name: 'Example .NET Consumer',
-        link: '/docs/examples/dotnet/consumer/'
-      }
-    ]
-  },
-  {
     linkTitle: 'Java SOAP API provider tested with Pact Verifier',
     linkUrl: '/docs/examples/soap/java/provider',
     badges: [],
